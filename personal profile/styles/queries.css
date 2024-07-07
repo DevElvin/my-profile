@@ -1,0 +1,74 @@
+
+/********************************************/
+/*1200PX*/
+/********************************************/
+@media(max-width: 75em){
+html{
+  font-size: 56.25%;
+}
+}
+
+@media(max-width: 56.25em){
+html{
+  font-size: 50%;
+}
+.Summary{
+  font-size: 1.8rem;
+}
+
+.social-links{
+  padding-left: 5rem;
+}
+.Summary span{
+  padding: 0.4rem 1rem;
+}
+.related-box{
+  padding-right: 2rem;
+}
+
+}
+
+@media(max-width: 37.5em){
+  
+  html{
+    font-size: 43.75%;
+  }
+  .logo{
+    max-width: 15rem;
+  }
+
+  .button, .nav-button{
+    font-size: 1.5rem;
+    padding: 0.6rem 1.3rem;
+
+  }
+  .nav-buttons{
+    padding-top: 1.4rem;
+  }
+  .header-nav{
+    padding: 0 1rem;
+    align-items: center;
+  }
+ .tertiary-heading {
+    margin-top: 2.2rem;
+    font-size: 1.8rem;
+ }
+ .tab-buttons{
+  gap: 1.1rem;
+ }
+.feature-box{
+padding: 0 1.2rem;
+}
+body{
+  font-size: 1.8rem;
+}
+.resume-button {
+  margin-top: 4rem;
+}
+.image-answer.meal{
+  max-height: 16.8rem;
+}
+.header{
+  /* height: 50vh; */
+}
+}

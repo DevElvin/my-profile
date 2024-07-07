@@ -1,0 +1,465 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #bff7f7;
+}
+.logo{
+  max-width: 20rem;
+}
+
+.translate{
+  transform: translateY(20%);
+}
+.header{
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgba(25, 36, 54, 0.358);
+  background-size: cover ;
+  background-image: linear-gradient(45deg,rgba(25, 36, 54, 0.4), rgba(25, 36, 54, 0.4)), url('../imgs/Elvin-img-compressed.png');
+  /* background-position: c; */
+  background-position-y: top;
+  /* background-repeat: no-repeat; */
+}
+.color{
+  background-color: #192436 ;
+}
+.image-figure{
+  display: inline-block;
+  cursor: pointer;
+  transition: all 1s;
+}
+.image-figure:hover{
+  scale: 1.05;
+}
+.description{
+  font-style: italic;
+}
+.summary-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 2rem;
+  /* height: 100vh; */
+  /* background-color: red; */
+}
+
+.Summary span{
+  background: linear-gradient( to right,#5e83be, #7fafaf);
+  color: #192436;
+  padding: 0.5rem 1rem;
+  transform: skew(-22deg, 0deg);
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  display: inline-block;
+  font-weight: 600;
+}
+/* .summary-container{
+  margin: 0 auto;
+  max-width: 80rem;
+  display: flex;
+} */
+.spacing{
+  max-width: 40rem;
+}
+.Summary{
+  /* max-width: 50%; */
+  /* flex-basis: 25rem; */
+
+  /* transform: translateX(100%); */
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 1.4;
+  color: #bff7f7;
+  background-color: transparent;
+  transition: all 2s;
+  grid-column: 3/-1;
+  justify-self: center;
+}
+.Summary:hover{
+scale: 1.02;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+ 
+}
+
+.nav-button{
+text-decoration: none;
+}
+.button, .nav-button{
+   font-size: 1.8rem;
+   padding: 1rem 2rem;
+   border-radius: 1000px;
+   width: 19.6rem;
+   font-weight: 600;
+   border: none;
+   color: #192436;
+   background: linear-gradient( to right,#5e83be, #7fafaf);
+   cursor: pointer;
+}
+
+/*******************************************/
+/*PEOFESSIONAL LIFE SECTION*/
+/*******************************************/
+
+.tabs{
+  display: flex;
+  flex-shrink: 0;
+  gap: 1rem;
+  transition: all 0.5s;
+  
+}
+.icon{
+  stroke: #7fafaf;
+  max-height: 4rem;
+  max-width: 4rem;
+  fill: transparent;
+}
+.tab-box{
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.solo-code-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solo-code{
+  width: 50%;
+  border-radius: 2rem;
+
+}
+.tertiary-heading{
+  margin-top: 3rem;
+  text-align: center;
+  opacity: 0.7;
+}
+.image-gif{
+  max-height: 2.4rem;
+  filter: saturate(-50);
+}
+.hidden{
+visibility: hidden;
+pointer-events: none;
+position: absolute;
+transform: translateY(20rem);
+}
+
+
+.heading-primary{
+  text-align: center;
+}
+.section-professional{
+background: linear-gradient(#192436,#757c86);
+ 
+}
+.grid--3-cols{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.padding-elem{
+  padding: 0 3rem;
+}
+.container{
+  max-width: 80rem;
+  margin: 3rem  auto 0;
+ padding: 3rem 0;
+  background-color: #192436;
+  border-radius: 2rem;
+  transition: all 2s;
+  overflow: hidden;
+}
+.container.tabbed{
+margin-top: 0.6rem;
+}
+
+.tab-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.list{
+  list-style: none;
+}
+.list li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.related-header{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+blockquote{
+  font-family: "Roboto Condensed";
+  line-height: 1.4;
+}
+.author{
+  width: 50%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.intro{
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.related-box{
+  padding-right: 0.6rem;
+}
+
+
+/*******************************************/
+/*REUSABLES*/
+/*******************************************/
+.section-padding{
+  padding-top: 9.6rem;
+}
+
+
+/*******************************************/
+/*EDUCATION*/
+/*******************************************/
+.education{
+  background: linear-gradient(#757c86, #ddd);
+}
+.education-header{
+  text-align: center;
+  color: #192436;
+}
+.university-icon{
+  height: 3rem;
+  fill: #5e83be;
+  /* width: 60%; */
+}
+.high-school,.university{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.feature-box{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 4rem;
+}
+
+
+.single-item-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.university-info, .high-school-info{
+  line-height: 1.8;
+}
+.resume-box{
+  display: flex;
+  justify-content: center;
+}
+.resume-button{
+  margin-top: 8rem;
+  width: 80rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*******************************************/
+/*PERSONAL LIFE*/
+/*******************************************/
+.personal-life-header{
+  color: #192436;
+}
+.personal-life{
+  background: linear-gradient(#ddd, #757c86);
+  padding-bottom: 10rem;
+}
+
+.residency{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.residency h3{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.residency p{
+  line-height: 1.8;
+}
+.map-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map{
+  border-radius: 1rem;
+  opacity: 0.7;
+  width: 90%;
+}
+
+.personal-life h2{
+  text-align: center;
+}
+
+/* 192436 */
+/* Curiosity */
+.qna-header{
+  text-align: center;
+  margin-top: 8rem;
+  color: #202b3e;
+  opacity: 0.7;
+}
+
+.questions-accordion{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+  border-top: 0.3rem solid #5e83be;
+  position: relative;
+  padding: 0 3rem ;
+}
+
+.number{
+font-size: 4rem;
+opacity: 0.5;
+}
+.question{
+font-size: 3rem;
+opacity: 0.8;
+}
+.open-item{
+border: none;
+background-color: transparent;
+border-radius: 50%;
+cursor: pointer;
+width: 4rem;
+height: 4rem;
+}
+.open-item:hover{
+  background-color: #7fafaf;
+}
+.open-item:hover .icon{
+stroke: #192436;
+}
+.text-answers{
+grid-column: 2/3;
+line-height: 1.8;
+transition: all 0.5s;
+}
+
+.image-box-answer{
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  transition: all 0.5s;
+}
+.image-answer{
+max-width: 50%;
+border-radius: 1.5rem;
+opacity: 0.5;
+transition: all 0.5s;
+
+}
+.height-chop{
+  line-height: 1.3;
+  margin-top: 3rem;
+}
+.image-box-answer.meals{
+gap: 5rem;
+}
+.image-answer.meal{
+  max-height: 20rem;
+}
+
+.image{
+  max-height: 20rem;
+  max-width: auto;
+}
+
+/******************************************/
+/* FOOTER */
+/******************************************/
+.footer{
+  background: linear-gradient(#757c86, #192436);
+  background-image: linear-gradient( rgba(25, 36, 54, 0.9), rgba(25, 36, 54, 0.9)), url('../imgs/old-elvin-copy.jpg');
+  background-size: cover;
+}
+.footer-header{
+  text-align: center;
+  padding-top: 2rem;
+}
+.footer-container{
+  max-width: 80rem;
+  margin: 0 auto;
+
+}
+
+.social-icon{
+  max-height: 3rem;
+  max-width: 3rem;
+  opacity: 0.7;
+}
+.social-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.social-links div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a:link, .social-links a:visited{
+  text-decoration: none;
+  color: #ddd;
+  font-style: normal;
+   border-bottom: 0.05rem solid transparent;
+}
+
+.social-links a:hover, .social-links a:active{
+   text-decoration: none;
+  color: #adbb83;
+  border-bottom: 0.05rem solid #adbb83;
+  display: inline-block;
+}
+.questions-accordion.last-question{
+  height: auto;
+}
+
+.image-box-answer.last-figure{
+  display: block;
+  margin: 0;
+}
